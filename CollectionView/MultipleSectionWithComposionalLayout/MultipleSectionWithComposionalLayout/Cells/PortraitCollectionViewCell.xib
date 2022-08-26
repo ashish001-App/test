@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="" id="gTV-IL-0wX" customClass="PortraitCollectionViewCell" customModule="MultipleSectionWithComposionalLayout" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="304" height="182"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="304" height="182"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="popular-1" translatesAutoresizingMaskIntoConstraints="NO" id="ERm-3p-9sQ">
+                        <rect key="frame" x="0.0" y="0.0" width="304" height="131"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VtD-SS-Ehc">
+                        <rect key="frame" x="10" y="151" width="284" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="VtD-SS-Ehc" firstAttribute="top" secondItem="ERm-3p-9sQ" secondAttribute="bottom" constant="20" id="9VK-VY-qWn"/>
+                <constraint firstItem="VtD-SS-Ehc" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="AjY-uJ-3PX"/>
+                <constraint firstItem="ERm-3p-9sQ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="CwV-HK-p5A"/>
+                <constraint firstAttribute="trailing" secondItem="ERm-3p-9sQ" secondAttribute="trailing" id="E02-jp-LvW"/>
+                <constraint firstAttribute="bottom" secondItem="VtD-SS-Ehc" secondAttribute="bottom" constant="10" id="J6U-vE-mFI"/>
+                <constraint firstAttribute="trailing" secondItem="VtD-SS-Ehc" secondAttribute="trailing" constant="10" id="dfA-z0-Q9i"/>
+                <constraint firstItem="VtD-SS-Ehc" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="jKq-uq-gVj"/>
+                <constraint firstItem="ERm-3p-9sQ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="upm-0w-TyP"/>
+            </constraints>
+            <size key="customSize" width="304" height="182"/>
+            <connections>
+                <outlet property="cellImageView" destination="ERm-3p-9sQ" id="78E-Se-zQi"/>
+                <outlet property="cellTitleLabel" destination="VtD-SS-Ehc" id="BLt-Zt-Lwy"/>
+            </connections>
+            <point key="canvasLocation" x="200.00000000000003" y="44.866071428571423"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="popular-1" width="1124" height="923"/>
+    </resources>
+</document>
